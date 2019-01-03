@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 
-const Home = lazy(() => import('.//Home'));
-const About = lazy(() => import('.//About'));
-const Users = lazy(() => import('.//Users'));
+const Home = lazy(() => import('./Home'));
+const About = lazy(() => import('./About'));
+const User = lazy(() => import('./Users'));
 
 export const IndexPage = () => (
   <Suspense fallback={<div>Loading</div>}>
@@ -16,6 +16,6 @@ export const AboutPage = () => (
 );
 export const UsersPage = () => (
   <Suspense fallback={<div>Loading</div>}>
-    <Users />
+    <User />
   </Suspense>
 );

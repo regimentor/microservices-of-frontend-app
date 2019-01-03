@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <Fragment>
       <h2>Home</h2>
-      <Button theme="red">touch me</Button>
+      <Button theme="red">
+        <span>touch me</span>
+      </Button>
     </Fragment>
   );
 }

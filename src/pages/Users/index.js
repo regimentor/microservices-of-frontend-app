@@ -1,5 +1,12 @@
 import React from 'react';
 
+import { UserProfileProvider, UserProfile } from '@regimentor/mof-page-user-profile';
+import '@regimentor/mof-page-user-profile/dist/bundle.css';
+
 export default function Users() {
-  return <h2>Users</h2>;
+  return (
+    <UserProfileProvider>
+      <UserProfile />
+    </UserProfileProvider>
+  );
 }
